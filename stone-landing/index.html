@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Изделия из камня — Санкт-Петербург</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="marble-bg"></div>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#hero" class="logo">Камень</a>
+      <ul class="nav-links">
+        <li><a href="#stones">Материалы</a></li>
+        <li><a href="#products">Изделия</a></li>
+        <li><a href="#catalog">Работы</a></li>
+        <li><a href="#contact-form">Связаться</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Изделия из камня</h1>
+        <p class="hero-subtitle">Столешницы, камины, лестницы и интерьер под заказ в Санкт-Петербурге</p>
+        <a href="#contact-form" class="btn btn-primary">Оставить заявку</a>
+      </div>
+      <div class="hero-vein"></div>
+    </section>
+
+    <section id="stones" class="section stones-section">
+      <div class="container">
+        <h2 class="section-title">Материалы, с которыми мы работаем</h2>
+        <p class="section-desc">Натуральный камень для вашего дома — от классики до современных решений</p>
+        <div class="stones-grid">
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=500&q=80" alt="Кварц"></div>
+            <h3>Кварц</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&q=80" alt="Кварцит"></div>
+            <h3>Кварцит</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1615874959474-d60932a0d4d2?w=500&q=80" alt="Мрамор"></div>
+            <h3>Мрамор</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Оникс"></div>
+            <h3>Оникс</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=500&q=80" alt="Травертин"></div>
+            <h3>Травертин</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=500&q=80" alt="Гранит"></div>
+            <h3>Гранит</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=500&q=80" alt="Арагонит"></div>
+            <h3>Арагонит</h3>
+          </article>
+          <article class="stone-card">
+            <div class="stone-img-wrap"><img src="https://images.unsplash.com/photo-1516975080664-ed24fc8ea53e?w=500&q=80" alt="Брекчия"></div>
+            <h3>Брекчия</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <div class="container">
+        <h2 class="section-title">Что мы изготавливаем</h2>
+        <p class="section-desc">Индивидуальные изделия из натурального камня для интерьера и экстерьера</p>
+        <ul class="products-list">
+          <li>Столешницы для кухни и ванной</li>
+          <li>Столы — обеденные, журнальные, консольные</li>
+          <li>Камины и порталы</li>
+          <li>Лестницы и ступени</li>
+          <li>Подоконники</li>
+          <li>Полы и плинтусы</li>
+          <li>Облицовка стен, колонны, декор</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="catalog" class="section catalog-section">
+      <div class="container">
+        <h2 class="section-title">Примеры наших работ</h2>
+        <p class="section-desc">Каталог реализованных проектов</p>
+        <div id="catalog-grid" class="catalog-grid">
+          <div class="catalog-placeholder" id="catalog-placeholder">
+            <p>Загрузите фотографии работ в папку <code>photos</code></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-form" class="section form-section">
+      <div class="container form-container">
+        <h2 class="section-title">Связаться с нами</h2>
+        <p class="section-desc">Оставьте заявку — мы перезвоним и обсудим ваш заказ</p>
+        <form id="order-form" class="order-form">
+          <div class="form-row">
+            <label>
+              <span>Имя</span>
+              <input type="text" name="firstName" required placeholder="Иван">
+            </label>
+            <label>
+              <span>Фамилия</span>
+              <input type="text" name="lastName" required placeholder="Иванов">
+            </label>
+          </div>
+          <label>
+            <span>Номер телефона</span>
+            <input type="tel" name="phone" required placeholder="+7 (981) 860-69-73">
+          </label>
+          <label>
+            <span>Краткое описание заказа</span>
+            <textarea name="description" rows="4" required placeholder="Например: столешница из мрамора для кухни 3 м"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-submit">Оставить онлайн заявку</button>
+          <p id="form-message" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacts" class="section contacts-section">
+      <div class="container">
+        <h2 class="section-title">Контакты</h2>
+        <div class="contacts-block">
+          <a href="tel:+79818606973" class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span>+7 (981) 860-69-73</span>
+          </a>
+          <a href="mailto:izdeliya.iz.kamnya.spb@gmail.com" class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <span>izdeliya.iz.kamnya.spb@gmail.com</span>
+          </a>
+          <div class="contact-social">
+            <a href="https://t.me/Punchy24" target="_blank" rel="noopener" class="social-link" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635.099-.002.321.023.465.141.121.1.154.233.17.331.015.098.034.321.019.495z"/></svg>
+            </a>
+            <a href="https://wa.me/79818606973" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© Изделия из камня, Санкт-Петербург</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
